@@ -13,7 +13,7 @@
 body {
 	font-size: 16px;
 	color: #fff;
-	background-color: black;
+	background-color: white;
 	font-family: 'Oxygen', sans-serif;
 }
 #header-nav {
@@ -25,7 +25,7 @@ body {
 	font-weight: bolder;
 	color: blue;
 	text-shadow: 0px 2px 2px black;
-	margin-bottom: 30px;
+	margin-bottom: 5px;
 	position: relative;
 }
 h2 {
@@ -41,7 +41,7 @@ h2 {
 	text-align: center;
 }
 #nav-list a:hover {
-	background: black;
+	background: maroon;
 }
 #nav-list a span{
 	font-size: 1.8em;
@@ -64,8 +64,8 @@ h2 {
 	border:1px solid yellow;
 }
 .navbar-header button.navbar-toggle
-:hover,.navbar-header .icon-bar:hover {
-	background:black;
+.hover,.navbar-header .icon-bar.hover {
+	background:maroon;
 }
 .container {
 	margin: auto;
@@ -98,6 +98,39 @@ h2 {
 	overflow: scroll;
 	height: 150px;
 }
+/********** Large devices only **********/
+@media (min-width: 992px) {
+	.chick
+	.bee
+	.shush{
+		width: 33.3%;
+		float: left;
+	}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.chick
+	.bee
+	.shush {
+		width: 50%;
+		float: left;
+	}
+	.shush {
+		width: 100%!important;
+		float: left;
+	}
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+	.chick
+	.bee
+	.shush {
+		width: 100%;
+		float: left;
+	}
+}
 </style>
 </head>
 <body>
@@ -107,7 +140,7 @@ h2 {
 			<div class="navbar-header">
 				<h1>Food,LLC</h1>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav">
-					<span class="sr-only">Toggle navigation</span>
+					<span class="sr-only">Toggle Menu</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
